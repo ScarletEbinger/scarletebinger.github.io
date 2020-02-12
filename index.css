@@ -1,14 +1,24 @@
+
 html{
 	scroll-behavior:smooth
 }
 
 body{
+	background: url(bg.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* OLD ONE WHO DOESN'T FIT TO THE SCREEN
+body{
 	background-image: url(bg.png);
-	/*background-size: 100%*/
+	 /*background-size: 100%
 	background-repeat: repeat;
 	background-attachment: fixed;
 
-}
+} */
  
 /*img.bg{
  height: 100%;
