@@ -5,7 +5,7 @@ html{
 body{
 	background-image: url(bg.png);
 	/*background-size: 100%*/
-	background-repeat: repeat-y;
+	background-repeat: repeat;
 	background-attachment: fixed;
 
 }
