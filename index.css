@@ -1,4 +1,15 @@
 
+@font-face{
+	font-family: "se1";
+	src: url(se1.ttf) format("truetype");
+	
+
+}
+@font-face{
+	font-family: "se2";
+	src: url(se2.ttf) format("truetype");
+}
+
 html{
 	scroll-behavior:smooth
 }
@@ -69,7 +80,7 @@ div.title{
 }
 
 span.titletext{
-	font-family: "segoe ui semibold";
+	font-family: "se1";
 	color: rgba(255,255,255,0.8);
 	font-size: 30px;
 	animation-name: titlefade;
@@ -106,7 +117,7 @@ span.button{
 
 a.button:link, a.button:visited{
 	text-decoration: none;
-	font-family: "segoe ui semibold";
+	font-family: "se1";
 	font-size: 29px;
 	color: rgba(255,255,255,0.8);
 	text-transform: uppercase;
@@ -131,7 +142,7 @@ a.button:link, a.button:visited{
 }
 a.button:hover{
 	text-decoration: none;
-	font-family: "segoe ui semibold";
+	font-family: "se1";
 	font-size: 29px;
 	color: rgba(255,255,255,0.8);
 	text-transform: uppercase;
@@ -153,7 +164,7 @@ a.button:hover{
 }
 a.button:active{
 	text-decoration: none;
-	font-family: "segoe ui semibold";
+	font-family: "se1";
 	font-size: 29px;
 	color: rgba(255,255,255,0.8);
 	text-transform: uppercase;
@@ -209,7 +220,7 @@ span.intro{
 p.introtxt{
 	margin-top: 25%;
 	text-align: center;
-	font-family: "segoe ui";
+	font-family: "se2";
 	color: rgba(255,255,255,1);
 	font-size: 28px;
 	font-weight: bold;
@@ -240,7 +251,7 @@ img.strprt{
 
 p.strtxt{
 	text-align: center;
-	font-family: "segoe ui semibold";
+	font-family: "se1";
 	color: rgba(255,255,255,1);
 	font-size: 1.875em;
 
@@ -262,7 +273,7 @@ div.about{
 }
 
 p.abttxt{
-	font-family: "segoe ui semibold";
+	font-family: "se1";
 	color: rgba(255,255,255,1);
 	font-size: 1.9em;
 
@@ -287,7 +298,7 @@ div.cttttl{
 }
 
 p.ctttxt{
-	font-family: "segoe ui semibold";
+	font-family: "se1";
 	color: rgba(255,255,255,1);
 	font-size: 1.9em;
 }
@@ -307,7 +318,7 @@ img.gmailimg{
 }
 
 p.gmailadr{
-	font-family: "segoe ui semibold";
+	font-family: "se1";
 	color: rgba(255,255,255,1);
 	font-size: 1.8em;
 	margin-left: 20px;
@@ -328,7 +339,7 @@ img.outlookimg{
 }
 
 p.outlookadr{
-	font-family: "segoe ui semibold";
+	font-family: "se1";
 	color: rgba(255,255,255,1);
 	font-size: 1.8em;
 	margin-left: 20px;
@@ -349,7 +360,7 @@ img.instagramimg{
 }
 
 p.instagramadr{
-	font-family: "segoe ui semibold";
+	font-family: "se1";
 	color: rgba(255,255,255,1);
 	font-size: 1.8em;
 	margin-left: 20px;
@@ -370,7 +381,7 @@ img.whatsappimg{
 }
 
 p.whatsappadr{
-	font-family: "segoe ui semibold";
+	font-family: "se1";
 	color: rgba(255,255,255,1);
 	font-size: 1.8em;
 	margin-left: 20px;
