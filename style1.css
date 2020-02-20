@@ -15,21 +15,21 @@ html{
 }
 
 body{
-	background: url(bg.png) no-repeat center center fixed; 
+	/*background: url(bg.png)background-image: linear-gradient(-45deg, red, yellow) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-}
+    background-size: cover; */
+   
 
 /* OLD WALLPAPER WHO DOESN'T FIT TO THE SCREEN
-body{
-	background-image: url(bg.png);
-	 /*background-size: 100%
+body{*/
+	background-image: linear-gradient(45deg, #d73df5 , #8f3df5);
+	background-size: 100%
 	background-repeat: repeat;
 	background-attachment: fixed;
 
-} */
+} 
  
 /*img.bg{
  height: 100%;
@@ -48,6 +48,7 @@ div.header{
 	width: 100%;
 	z-index: 5;
 	top: 0px;
+	
 }
 
 img.photome1 { 

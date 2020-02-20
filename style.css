@@ -15,21 +15,21 @@ html{
 }
 
 body{
-	background: url(bg.png) no-repeat center center fixed; 
+	/*background: url(bg.png)background-image: linear-gradient(-45deg, red, yellow) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-}
+    background-size: cover; */
+   
 
 /* OLD WALLPAPER WHO DOESN'T FIT TO THE SCREEN
-body{
-	background-image: url(bg.png);
-	 /*background-size: 100%
+body{*/
+	background-image: linear-gradient(45deg, #d73df5 , #8f3df5);
+	background-size: 100%
 	background-repeat: repeat;
 	background-attachment: fixed;
 
-} */
+} 
  
 /*img.bg{
  height: 100%;
@@ -47,6 +47,7 @@ div.header{
 	position: fixed;             /* TESTE DE HEADER */
 	width: 100%;
 	z-index: 5;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 img.photome1 { 
@@ -104,11 +105,11 @@ div.menu{
 	border-style: hidden;
 	border-width: 1px;
 	margin-top: 10px;
-	height: 70px;
+	height: 62px;
 	animation-name: menuanim;
 	animation-duration: 2.8s;
 	/*animation-delay: 1.3s;*/
-
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 span.button{
@@ -129,7 +130,7 @@ a.button:link, a.button:visited{
 	border-style: solid;
 	border-color: rgba(152,48,255,0.6);
 	position: relative;
-	top: 15px;
+	top: 10px;
 	background-color: rgba(200,200,200,0.6);
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -139,6 +140,7 @@ a.button:link, a.button:visited{
 	transition-property: background-color, border-color;
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in;
+
 }
 a.button:hover{
 	text-decoration: none;
@@ -154,7 +156,7 @@ a.button:hover{
 	border-style: solid;
 	border-color: rgba(152,48,255,0.95);
 	position: relative;
-	top: 15px;
+	top: 10px;
 	background-color: rgba(200,200,200,1);
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -176,7 +178,7 @@ a.button:active{
 	border-style: solid;
 	border-color: rgba(255,0,255,0.7);
 	position: relative;
-	top: 15px;
+	top: 10px;
 	background-color: rgba(200,200,200,1);
 	padding-top: 10px;
 	padding-bottom: 10px;
