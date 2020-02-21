@@ -35,8 +35,23 @@ body{*/
  height: 100%;
  }*/
 
+div.headerblur{
+	
+	margin-right: -8px;
+	margin-left: -8px;
+	margin-top: -8px;
+	border: 2px;
+	border-style: hidden;
+	border-color: rgba(255, 0, 0, 1);
+	height: 115px;
+	position: fixed;             /* TESTE DE HEADER */
+	width: 100%;
+	z-index: 3;
+	
+	filter: blur(9px);
+}
 div.header{
-	background-color: rgba(200, 200, 200, 0.4);
+	background-color: rgba(200, 200, 200, 0.7);
 	margin-right: -8px;
 	margin-left: -8px;
 	margin-top: -8px;
@@ -48,6 +63,7 @@ div.header{
 	width: 100%;
 	z-index: 5;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
 }
 
 img.photome1 { 
