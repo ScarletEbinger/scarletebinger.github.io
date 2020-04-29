@@ -1,0 +1,247 @@
+
+@font-face{
+	font-family: "se1";
+	src: url(fonts/se1.ttf) format("truetype");
+	
+
+}
+@font-face{
+	font-family: "se2";
+	src: url(fonts/se2.ttf) format("truetype");
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	/*background: url(bg.png)background-image: linear-gradient(-45deg, red, yellow) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+   
+
+/* OLD WALLPAPER WHO DOESN'T FIT TO THE SCREEN
+body{*/
+	background-image: linear-gradient(45deg, #d73df5 , #8f3df5);
+	background-size: 100%
+	background-repeat: repeat;
+	background-attachment: fixed;
+
+} 
+ 
+/*img.bg{
+ height: 100%;
+ }*/
+
+div.header{
+	background-color: rgba(200, 200, 200, 0.7);
+	margin-right: -8px;
+	margin-left: -8px;
+	margin-top: 0px;
+	border: 2px;
+	border-style: hidden;
+	border-color: rgba(0, 0, 0, 1);
+	height: 115px;
+	position: fixed;             /* TESTE DE HEADER */
+	width: 100%;
+	z-index: 5;
+	top: 0px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img.photome1 { 
+	max-height: 95px;
+	max-width: 95px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border-width: 1px;
+	border-style: hidden;
+	border-color: black;
+	float: left ;
+	position: relative;
+	animation-name: photo1;
+	animation-duration: 1s;
+	/*animation-direction: reverse;*/
+	display: inline;
+}
+
+div.title{
+	margin-left: 15px;
+	position: relative;
+	top: 35px;
+	padding-top: 36px;
+	padding-bottom: 36px;	
+	width: 210px;
+	display: inline;
+	animation-name: titlemove;
+	animation-duration: 2s;
+
+}
+
+span.titletext{
+	font-family: "se1";
+	color: rgba(255,255,255,0.8);
+	font-size: 30px;
+	animation-name: titlefade;
+	animation-duration: 2s;
+	/*animation-delay: 01s;*/
+}
+
+div.langset{
+	position: relative;
+	width: 75%;
+	height: 500px;
+	top: 180px;
+	margin-left: auto;
+	margin-right: auto;
+	/* for spacing control only */
+	/*border-style: solid;
+	border-width: 1px;
+	border-color: orange; */
+	/* ==================== */
+	background-color: rgba(255,255,255,0.3);
+	animation-duration: 4s;
+	animation-name: boxfade;
+}
+
+span.langttl{
+	font-family: "se1";
+	position: relative;
+	top: 40px;
+	color: rgba(255,255,255,1);
+	font-size: 30px;
+	text-align: center;
+}
+p.lngttl{
+	margin-top: 30px;
+	text-align: center;
+	animation-name: txtfd;
+	animation-duration: 4.5s;
+}
+
+div.langbtn{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 380px;
+	
+
+}
+
+div.ptbr{
+	position: relative;
+	float: left;
+	margin-left: 6.5%;
+	margin-top: 80px;
+	width: 40%;
+	height: 200px;
+	background-color: rgba(255,255,255,0.3);
+	animation-duration: 4s;
+	animation-name: boxfade;
+}
+
+div.enus{
+	position: relative;
+	float: right;
+	margin-right: 6.5%;
+	margin-top: 80px;
+	width: 40%;
+	height: 200px;
+	background-color: rgba(255,255,255,0.3);
+	animation-duration: 4s;
+	animation-name: boxfade;
+}
+
+p.langtxt{
+	font-family: "se1";
+	color: rgba(255,255,255,1);
+	font-size: 30px;
+	text-align: center;
+	position: relative;
+	top: 45px;
+	animation-name: txtfd;
+	animation-duration: 4.5s;
+}
+
+a.langselect:link{
+
+}
+
+a.langselect:hover{
+	filter: contrast(180%);
+}
+
+
+
+
+/* =============== ANIMATIONS ================== */
+
+@keyframes photo1 {
+	from {
+		transform: rotate(-90deg);
+		position: relative;
+		right: 130px;
+		
+	}
+	to{
+		transform: rotate(0deg);
+		right: 0px;
+	}
+}
+@keyframes titlemove {
+	from {
+		position: relative;
+		right: 300px;
+		
+	}
+	
+	to {
+		position: relative;
+		right: 0px;
+	}
+}
+@keyframes titlefade {
+	0% {
+		color: rgba(255,255,255,0);
+		
+	}
+	50% {
+		color: rgba(255,255,255,0);
+		
+	}
+	
+	100% {
+		color: rgba(255,255,255,0.8);
+	}
+}
+
+@keyframes boxfade{
+	0%{
+		background-color: rgba(255,255,255,0);
+	}
+
+	30%{
+		background-color: rgba(255,255,255,0);
+	}
+
+	100%{
+		background-color: rgba(255,255,255,0.3);
+	}
+}
+
+@keyframes txtfd{
+	0%{
+		color: rgba(255,255,255,0);
+	}
+
+	40%{
+		color: rgba(255,255,255,0);
+	}
+
+	100%{
+		color: rgba(255,255,255,1);
+	}
+}
