@@ -121,11 +121,11 @@ div.menu{
 	border-style: hidden;
 	border-width: 1px;
 	margin-top: 10px;
-	height: 62px;
+	height: 61px;
 	animation-name: menuanim;
 	animation-duration: 2.8s;
 	/*animation-delay: 1.3s;*/
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 span.button{
@@ -156,6 +156,7 @@ a.button:link, a.button:visited{
 	transition-property: background-color, border-color;
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in;
+	/*box-shadow: 0px 6px 20 2 rgba(0, 0, 0, 0.19);*/
 
 }
 a.button:hover{
