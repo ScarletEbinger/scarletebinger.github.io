@@ -1,0 +1,518 @@
+
+@font-face{
+	font-family: "se1";
+	src: url(fonts/se1.ttf) format("truetype");
+	
+
+}
+@font-face{
+	font-family: "se2";
+	src: url(fonts/se2.ttf) format("truetype");
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	/*background: url(bg.png)background-image: linear-gradient(-45deg, red, yellow) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+   
+
+/* OLD WALLPAPER WHO DOESN'T FIT TO THE SCREEN
+body{*/
+	background-image: linear-gradient(45deg, #d73df5 , #8f3df5);
+	background-size: 100%
+	background-repeat: repeat;
+	background-attachment: fixed;
+
+} 
+ 
+/*img.bg{
+ height: 100%;
+ }*/
+
+div.headerblur{
+	
+	margin-right: -8px;
+	margin-left: -8px;
+	margin-top: -8px;
+	border: 2px;
+	border-style: hidden;
+	border-color: rgba(255, 0, 0, 1);
+	height: 115px;
+	position: fixed;             /* TESTE DE HEADER */
+	width: 100%;
+	z-index: 3;
+	
+	filter: blur(9px);
+}
+div.header{
+	background-color: rgba(200, 200, 200, 0.7);
+	margin-right: -8px;
+	margin-left: -8px;
+	margin-top: -8px;
+	border: 2px;
+	border-style: hidden;
+	border-color: rgba(0, 0, 0, 1);
+	height: 115px;
+	position: fixed;             /* TESTE DE HEADER */
+	width: 100%;
+	z-index: 5;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+
+img.photome1 { 
+	max-height: 95px;
+	max-width: 95px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border-width: 1px;
+	border-style: hidden;
+	border-color: black;
+	float: left ;
+	position: relative;
+	animation-name: photo1;
+	animation-duration: 1s;
+	/*animation-direction: reverse;*/
+	display: inline;
+}
+
+div.title{
+	margin-left: 15px;
+	position: relative;
+	top: 35px;
+	padding-top: 36px;
+	padding-bottom: 36px;	
+	width: 210px;
+	display: inline;
+	animation-name: titlemove;
+	animation-duration: 2s;
+
+}
+
+span.titletext{
+	font-family: "se1";
+	color: rgba(255,255,255,0.8);
+	font-size: 30px;
+	animation-name: titlefade;
+	animation-duration: 2s;
+	/*animation-delay: 01s;*/
+}
+
+div.restoftopbar{
+	
+	height: 90px;
+	border-style: hidden;
+	border-width: 1px;
+	border-color: green;
+	float: right;
+	display: inline;
+	padding-right: 25px;
+	padding-top: 8px;
+
+}
+div.menu{
+	border-style: hidden;
+	border-width: 1px;
+	margin-top: 10px;
+	height: 62px;
+	animation-name: menuanim;
+	animation-duration: 2.8s;
+	/*animation-delay: 1.3s;*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+span.button{
+
+}
+
+a.button:link, a.button:visited{
+	text-decoration: none;
+	font-family: "se1";
+	font-size: 29px;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+    height: 70px;
+	border-bottom-width: 3px;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-style: solid;
+	border-color: rgba(152,48,255,0.6);
+	position: relative;
+	top: 10px;
+	background-color: rgba(200,200,200,0.6);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline;
+	transition-property: background-color, border-color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in;
+
+}
+a.button:hover{
+	text-decoration: none;
+	font-family: "se1";
+	font-size: 29px;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+    height: 70px;
+	border-bottom-width: 3px;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-style: solid;
+	border-color: rgba(152,48,255,0.95);
+	position: relative;
+	top: 10px;
+	background-color: rgba(200,200,200,1);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline;
+}
+a.button:active{
+	text-decoration: none;
+	font-family: "se1";
+	font-size: 29px;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+    height: 70px;
+	border-bottom-width: 3px;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-style: solid;
+	border-color: rgba(255,0,255,0.7);
+	position: relative;
+	top: 10px;
+	background-color: rgba(200,200,200,1);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline;
+}
+
+div.body{
+	position: relative;
+	top: 0px;
+	display: inline-block;
+	z-index: 1;
+	margin-top: 0%;
+	/*margin-left: 41%;*/ /*n deu mt certo mas testar no RESPONSIVO */
+	border-style: hidden;
+	border-width: 1px;
+	width: 100%;
+	/*margin-right: 45%;*/ /*n deu mt certo mas testar no RESPONSIVO */
+
+	
+}
+
+div.introa{
+	margin-top: 12%;
+	width: 100%;
+	height: 150px;
+	border-style: hidden;
+	border-color: blue;
+	border-width: 1px;
+}
+
+span.intro{
+	border-style: hidden;
+	border-color: red;
+	border-width: 1px;
+	
+	
+
+}
+
+p.introtxt{
+	margin-top: 25%;
+	text-align: center;
+	font-family: "se2";
+	color: rgba(255,255,255,1);
+	font-size: 28px;
+	font-weight: bold;
+	animation-name: introtxt;
+	animation-duration: 3.7s;
+
+
+}
+
+div.streaming{
+	height: 720px;
+	border-style: hidden;
+	border-width: 1px;
+	border-color: orange;
+	margin-top: 180px;
+}
+span.str{
+	
+
+}
+
+img.strprt{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+
+}
+
+p.strtxt{
+	text-align: center;
+	font-family: "se1";
+	color: rgba(255,255,255,1);
+	font-size: 1.875em;
+
+}
+img.fbggbtn{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 26%;
+}
+
+div.about{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	margin-top: 120px;
+	margin-bottom: 20px;
+}
+
+p.abttxt{
+	font-family: "se1";
+	color: rgba(255,255,255,1);
+	font-size: 1.9em;
+
+}
+div.bottom{
+	margin-top: 150px;
+	margin-right: -8px;
+	margin-left: -9px;
+	margin-bottom: -10px;
+	height: 500px;
+	background-color: rgba(255,255,255,0.3);
+}
+
+div.contact{
+	padding-top: 60px;
+	
+}
+div.cttttl{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 230px;
+}
+
+p.ctttxt{
+	font-family: "se1";
+	color: rgba(255,255,255,1);
+	font-size: 1.9em;
+}
+
+div.gmail{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 470px;
+	padding-left: 70px;
+}
+
+img.gmailimg{
+	height: 60px;
+	width: 60px;
+	float: left;
+	margin-right: 20px; 
+}
+
+p.gmailadr{
+	font-family: "se1";
+	color: rgba(255,255,255,1);
+	font-size: 1.8em;
+	margin-left: 20px;
+	text-align: justify;
+}
+
+div.outlook{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 470px;
+	padding-left: 70px;
+}
+
+img.outlookimg{
+	height: 60px;
+	width: 60px;
+	float: left;
+	margin-right: 20px; 
+}
+
+p.outlookadr{
+	font-family: "se1";
+	color: rgba(255,255,255,1);
+	font-size: 1.8em;
+	margin-left: 20px;
+	text-align: justify;
+}
+
+div.instagram{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/*width: 270px;*/
+	width: 470px;
+	padding-left: 70px;
+}
+
+img.instagramimg{
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin-right: 20px; 
+}
+
+p.instagramadr{
+	font-family: "se1";
+	color: rgba(255,255,255,1);
+	font-size: 1.8em;
+	margin-left: 20px;
+	text-align: justify;
+}
+a.instalink:link{
+	font-family: "se1";
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+	text-align: justify;
+}
+
+div.whatsapp{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 370px;
+}
+
+img.whatsappimg{
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin-right: 20px; 
+}
+
+p.whatsappadr{
+	font-family: "se1";
+	color: rgba(255,255,255,1);
+	font-size: 1.8em;
+	margin-left: 20px;
+}
+
+div.langretdiv{
+	width: 60%;
+	position: relative;
+	top: 100px;
+	left: 60px;
+}
+
+span.langretspan{
+
+}
+
+p.langret{
+	font-family: "se1";
+	
+	font-size: 1em;
+}
+
+a.linklangret{
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+}
+
+
+
+/* =============== ANIMATIONS ================== */
+
+@keyframes photo1 {
+	from {
+		transform: rotate(-90deg);
+		position: relative;
+		right: 130px;
+		
+	}
+	to{
+		transform: rotate(0deg);
+		right: 0px;
+	}
+}
+@keyframes titlemove {
+	from {
+		position: relative;
+		right: 300px;
+		
+	}
+	
+	to {
+		position: relative;
+		right: 0px;
+	}
+}
+@keyframes titlefade {
+	0% {
+		color: rgba(255,255,255,0);
+		
+	}
+	50% {
+		color: rgba(255,255,255,0);
+		
+	}
+	
+	100% {
+		color: rgba(255,255,255,0.8);
+	}
+}
+@keyframes menuanim{
+	0%{
+		position: relative;
+		bottom: 100px ;
+		}
+	50%{
+		position: relative;
+		bottom: 100px ;
+		}
+	100%{
+		position: relative;
+		bottom:  0px;
+	}
+}
+@keyframes introtxt{
+	0%{
+		position: relative;
+		top: 90px;
+		color: rgba(255,255,255,0);
+	}
+	65%{
+		position: relative;
+		top: 90px;
+		color: rgba(255,255,255,0);
+	}
+	100%{
+		position: relative;
+		top: 0px;
+		color: rgba(255,255,255,1);;
+	}
+}
