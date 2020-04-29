@@ -281,7 +281,7 @@ img.fbggbtn{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 26%;
+	width: 35%;
 }
 div.spotify{
 	height:400px;
@@ -301,10 +301,9 @@ p.spotify{
 }
 img.spotifylink{
 	display: block;
-	height: 200px;
-	width: 200px;
 	margin-left: auto;
 	margin-right: auto;
+	width: 35%;
 }
 
 div.about{
