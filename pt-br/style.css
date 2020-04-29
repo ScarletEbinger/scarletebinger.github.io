@@ -1,13 +1,13 @@
 
 @font-face{
 	font-family: "se1";
-	src: url("http://scarletebinger.github.io/fonts/se1.ttf") format("truetype");
+	src: url(fonts/se1.ttf) format("truetype");
 	
 
 }
 @font-face{
 	font-family: "se2";
-	src: url("http://scarletebinger.github.io/fonts/se2.ttf") format("truetype");
+	src: url(fonts/se2.ttf) format("truetype");
 }
 
 html{
