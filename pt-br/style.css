@@ -427,7 +427,7 @@ p.instagramadr{
 	margin-left: 20px;
 	text-align: justify;
 }
-a.instalink:link{
+a.sociallink:link, a.sociallink:visited{
 	font-family: "se1";
 	color: rgba(255,255,255,1);
 	text-decoration: none;
